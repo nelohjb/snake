@@ -13,13 +13,13 @@
 #define LEFT 3
 #define RIGHT 4
 
-//ÉèÖÃ¹â±êÎ»ÖÃ
+//è®¾ç½®å…‰æ ‡ä½ç½®
 void setCP(int x, int y);
-//¶ÁÈ¡¼üÅÌ·½Ïò¼ü
+//è¯»å–é”®ç›˜æ–¹å‘é”®
 int newDirection();
-//Òş²Ø¹â±ê
+//éšè—å…‰æ ‡
 void hideCursor();
-//ÔìÇ½
+//é€ å¢™
 void createWall();
 
 
@@ -36,15 +36,15 @@ public:
 	void clearSnake();
 	void printSnake();
 
-	bool knockSnake();	//food 			/******** ´ı¸Ä ********/
+	bool knockSnake();	//food 		/******** å¾…æ”¹ ********/
 	bool knockFood();	//snake 
 	bool knockSelf();	//snake 
 	bool knockWall();	//snake 	
 
-	void avoidSingle();	//food avoid	/******** ´ı¸Ä ********/
-	void avoidWall();	//food avoid	/******** ´ı¸Ä ********/
+	void avoidSingle();	//food avoid	/******** å¾…æ”¹ ********/
+	void avoidWall();	//food avoid	/******** å¾…æ”¹ ********/
 
-	void createFood();					/******** ´ı¸Ä ********/
+	void createFood();			/******** å¾…æ”¹ ********/
 	int Judge();
 	void printInfo();
 
@@ -61,11 +61,11 @@ public:
 private:
 	Position pos[maxlen];
 	Position lastTail;
-	Position food;	/******** ´ı×ªÒÆ ********/
+	Position food;			/******** å¾…æ”¹ ********/
 	int speed;
 	int score;
 	int grade;
-	int countFood;	/******** ´ı×ªÒÆ ********/
+	int countFood;			/******** å¾…æ”¹ ********/
 	int length;
 	int direction;
 };
